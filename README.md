@@ -1,77 +1,43 @@
-# [![Web Starter Kit](https://cloud.githubusercontent.com/assets/110953/11445049/f05512ba-9520-11e5-8fdb-8c8eb5f690d0.jpg)](https://github.com/google/web-starter-kit/releases/latest)
+# [![Chewy Frontend](https://raw.githubusercontent.com/Chewy-Inc/chewy-frontend-test/master/chewy-fe_thumb.png)](https://github.com/Chewy-Inc/chewy-frontend-test)
 
-## Overview
+## Challenge Overview
 
-[Web Starter Kit](https://developers.google.com/web/tools/starter-kit/) is an opinionated boilerplate for web development. Tools for building a great experience across many devices and [performance oriented](#web-performance). Helping you to stay productive following the best practices outlined in Google's [Web Fundamentals](https://developers.google.com/web/fundamentals/). A solid starting point for both professionals and newcomers to the industry.
+Chewy leverages [Bazaarvoice's](http://www.bazaarvoice.com/) API to provide the ability for customers to look at customer reviews.  One of our engineers has created a small proof of concept using their [conversations API](https://developer.bazaarvoice.com/docs/read/conversations_api) highlighting an initial loading of 10 customer reviews.
 
-### Features
+Your task is to finish said proof of concept by adding the following pieces of missing functionality as requested by our product team:
 
-| Feature                                | Summary                                                                                                                                                                                                                                                     |
-|----------------------------------------|-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-| Responsive boilerplate | A responsive boilerplate optimized for the multi-screen web. Powered by [Material Design Lite](http://getmdl.io).  You're free to use either this or a completely clean-slate  via [basic.html](https://github.com/google/web-starter-kit/blob/master/app/basic.html).                          |
-| Sass support                           | Compile [Sass](http://sass-lang.com/) into CSS with ease, bringing support for variables, mixins and more. (Run `gulp serve` or `gulp` for production)                                                                                                      |
-| Performance optimization               | Minify and concatenate JavaScript, CSS, HTML and images to help keep your pages lean. (Run `gulp` to create an optimised version of your project to `/dist`)                                                                                                |
-| Code Linting               | JavaScript code linting is done using [ESLint](http://eslint.org) - a pluggable linter tool for identifying and reporting on patterns in JavaScript. Web Starter Kit uses ESLint with [eslint-config-google](https://github.com/google/eslint-config-google), which tries to follow the Google JavaScript style guide.                                                                                                |
-| ES2015 via Babel 6.0                   | Optional ES2015 support using [Babel](https://babeljs.io/). To enable ES2015 support remove the line `"only": "gulpfile.babel.js",` in the [.babelrc](.babelrc) file. ES2015 source code will be automatically transpiled to ES5 for wide browser support.  |
-| Built-in HTTP Server                   | A built-in server for previewing your site locally while you develop and iterate                                                                                                                                                                            |
-| Live Browser Reloading                 | Reload the browser in real-time anytime an edit is made without the need for an extension. (Run `gulp serve` and edit your files)                                                                                                                           |
-| Cross-device Synchronization           | Synchronize clicks, scrolls, forms and live-reload across multiple devices as you edit your project. Powered by [BrowserSync](http://browsersync.io). (Run `gulp serve` and open up the IP provided on other devices on your network)                       |
-| Offline support                     | Thanks to our baked in [Service Worker](http://www.html5rocks.com/en/tutorials/service-worker/introduction/) [pre-caching](https://github.com/google/web-starter-kit/blob/master/gulpfile.babel.js#L226), sites deploying `dist` to a HTTPS domain will enjoy offline support. This is made possible by [sw-precache](https://github.com/GoogleChrome/sw-precache/).                                                                                                                                              |
-| PageSpeed Insights                     | Web performance metrics showing how well your site performs on mobile and desktop (Run `gulp pagespeed`)                                                                                                                                                    |
+Functional Requirements:
+- Review page should list 10 reviews initially and offer the possibility to view up to 5 pages of reviews.
+- When using pages, the customer should be able to click previous in the UI to go back one page or use the back button to go back one page.
+- As a customer I should be able to sort reviews by Highest Rating, Lowest Rating, Oldest Rating or Newest Rating.
+- Customer ratings go from 1 to 5 and should be displayed in the form of stars, refer to attached [design mock](reviews-mock.png).
+- Pagination should adjust accordingly depending if enough reviews are available to display.
+- If no reviews are available for said product, the app should show messaging to indicate to the customer.
+
+Technical requirements:
+- Application must be an SPA and handle all page requests via AJAX.
+- HTML should be fully responsive however we leave presentation details up to you.  Think about what challenges customers face when navigating lengthy review pages on a small screen.
+- The application must clearly convey progress when loading paged information.  Our engineer has added a barebones loading gif but we think it can definitely be improved.  Again, this is where we leverage your expertise on how to best approach these types of issues.
+- Make sure to architect your code to be highly reusable.  Think about how you would break off this project into modules (bonus points if you want to go the extra mile and AMDify the project) and how those modules would interact with each other.
+- **Bonus points:**  The BazaarVoice API is very complex and fully documented.  Think about other types of functionality that you could leverage that could be cool/useful and build them into the application.
+- **Bonus points:**  Add tests (unit/end to end).
+
+Browser requirements:
+Application should work on these browsers:
+- IE8+
+- Chrome Latest (Android and desktop)
+- Firefox Latest.
+- Safari Latest (iOS and desktop).
 
 ## Quickstart
 
-[Download](https://github.com/google/web-starter-kit/releases/latest) the kit or clone this repository and build on what is included in the `app` directory.
+This project is bootstrapped from [Web Starter Kit](https://developers.google.com/web/tools/starter-kit/).  Be sure to follow the [installation docs](docs/install.md). Once you have verified your installation is correct, check out the [commands](docs/commands.md) available to get started.
 
-There are two HTML starting points, from which you can choose:
+## How to Submit
 
-- `index.html` - the default starting point, containing Material Design layout.
-- `basic.html` - no layout, but still includes our minimal mobile best-practices
+To keep a level playing field with other people who might be tackling this project, we encourage candidates not to fork this project or reference it in any public forum.  Doing so will most likely disqualify you from our recruiting process.
 
-Be sure to look over the [installation docs](docs/install.md) to verify your environment is prepared to run WSK.
-Once you have verified that your system can run WSK, check out the [commands](docs/commands.md) available to get started.
+We suggest cloning this repository locally and creating a branch from master and then adding gradual commits that show the progress of your code solution.  Once done, submit a [patch](https://ariejan.net/2009/10/26/how-to-create-and-apply-a-patch-with-git/) to **<<FILL OUT EMAIL HERE>>.**
 
-## Web Performance
+As a final note, if at any point you feel stuck, have additional questions/comments or need to clarify something, **<<FILL IN WHAT TO DO HOW TO CONTACT, ETC>>**
 
-Web Starter Kit strives to give you a high performance starting point out of the box. Our median Web Page Test [scores](http://www.webpagetest.org/result/151201_VW_XYC/) for the default template have a [Speed Index](https://sites.google.com/a/webpagetest.org/docs/using-webpagetest/metrics/speed-index) of ~1100 (1000 is ideal) and a repeat-visit Speed Index of ~550 thanks to Service Worker precaching. 
-
-## Browser Support
-
-At present, we officially aim to support the last two versions of the following browsers:
-
-* Chrome
-* Edge
-* Firefox
-* Safari
-* Opera
-* Internet Explorer 9+
-
-This is not to say that Web Starter Kit cannot be used in browsers older than those reflected, but merely that our focus will be on ensuring our layouts work great in the above.
-
-## Troubleshooting
-
-If you find yourself running into issues during installation or running the tools, please check our [Troubleshooting](https://github.com/google/web-starter-kit/wiki/Troubleshooting) guide and then open an [issue](https://github.com/google/web-starter-kit/issues). We would be happy to discuss how they can be solved.
-
-## A Boilerplate-only Option
-
-If you would prefer not to use any of our tooling, delete the following files from the project: `package.json`, `gulpfile.babel.js`, `.jshintrc` and `.travis.yml`. You can now safely use the boilerplate with an alternative build-system or no build-system at all if you choose.
-
-## Docs and Recipes
-
-* [File Appendix](https://github.com/google/web-starter-kit/blob/master/docs/file-appendix.md) - What do the different files here do?
-* [Using Material Design Lite's Sass](https://github.com/google/web-starter-kit/blob/master/docs/mdl-sass.md) - how to get MDL's Sass working with WSK
-* [Deployment guides](https://github.com/google/web-starter-kit/blob/master/docs/deploy.md) - available for Firebase, Google App Engine and other services.
-* [Gulp recipes](https://github.com/gulpjs/gulp/tree/master/docs/recipes) - the official Gulp recipes directory includes a comprehensive list of guides for different workflows you can add to your project.
-
-## Inspiration
-
-Web Starter Kit is inspired by [Mobile HTML5 Boilerplate](https://html5boilerplate.com/mobile/) and Yeoman's [generator-gulp-webapp](https://github.com/yeoman/generator-webapp), having taken input from contributors to both projects during development. Our [FAQs](https://github.com/google/web-starter-kit/wiki/FAQ) attempt to answer commonly asked questions about the project.
-
-## Contributing
-
-Contributions, questions and comments are all welcome and encouraged. For code contributions to Web Starter Kit, please see our [Contribution guide](CONTRIBUTING.md) before submitting a pull request. [Website](https://developers.google.com/web/tools/starter-kit/) related issues should be filed on the [Web Fundamentals](https://github.com/google/WebFundamentals/issues/new) issue tracker.
-
-## License
-
-Apache 2.0  
-Copyright 2015 Google Inc

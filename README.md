@@ -37,7 +37,15 @@ This project is bootstrapped from [Web Starter Kit](https://developers.google.co
 
 To keep a level playing field with other people who might be tackling this project, we encourage candidates not to fork this project or reference it in any public forum.  Doing so will most likely disqualify you from our recruiting process.
 
-We suggest cloning this repository locally and creating a branch from master and then adding gradual commits that show the progress of your code solution.  Once done, submit a [patch](https://ariejan.net/2009/10/26/how-to-create-and-apply-a-patch-with-git/) to **<<FILL OUT EMAIL HERE>>.**
+We suggest cloning this repository locally and creating a branch from
+master and then adding gradual commits that show the progress of your
+code solution.  Once done, create a
+[patch](https://ariejan.net/2009/10/26/how-to-create-and-apply-a-patch-with-git/)
+and submit it via the upload link that your recruiter should have sent
+you.
 
-As a final note, if at any point you feel stuck, have additional questions/comments or need to clarify something, **<<FILL IN WHAT TO DO HOW TO CONTACT, ETC>>**
+As a final note, if at any point you feel stuck, have additional
+questions/comments or need to clarify something, feel free to email your
+recruiter with questions and we will try and answer them.
 
+GLHF

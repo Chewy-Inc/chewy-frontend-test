@@ -24,7 +24,7 @@ Technical requirements:
 
 Browser requirements:
 Application should work on these browsers:
-- IE8+
+- IE9+
 - Chrome Latest (Android and desktop)
 - Firefox Latest.
 - Safari Latest (iOS and desktop).
